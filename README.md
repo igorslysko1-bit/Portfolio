@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="sk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor Slyško - Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for a more subtle look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Igor Slyško</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">O mne</a>
+                <a href="#projects" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">Projekty</a>
+                <a href="#results" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">Výsledky</a>
+                <a href="#curaprox" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">Prečo Curaprox</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition-transform duration-300 hover:scale-105">Kontakt</a>
+             <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-slate-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-slate-600 hover:text-blue-600">O mne</a>
+            <a href="#projects" class="block py-2 text-slate-600 hover:text-blue-600">Projekty</a>
+            <a href="#results" class="block py-2 text-slate-600 hover:text-blue-600">Výsledky</a>
+            <a href="#curaprox" class="block py-2 text-slate-600 hover:text-blue-600">Prečo Curaprox</a>
+            <a href="#contact" class="block mt-2 text-center bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700">Kontakt</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section class="text-center py-16 md:py-24">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-4 leading-tight">
+                Tvorím obsah, ktorý spája<br class="hidden md:block"> <span class="text-blue-600">emócie s výsledkami</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-slate-600">
+                Copywriting | Digitálny marketing | Grafický dizajn
+            </p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-16 scroll-mt-20">
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2">
+                    <img src="https://placehold.co/400x400/e2e8f0/3b82f6?text=IS" alt="Igor Slyško" class="rounded-full shadow-lg mx-auto w-48 h-48 md:w-full md:h-auto object-cover">
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">O mne</h2>
+                    <p class="mb-4">Som marketér a copywriter s viac ako 5-ročnými skúsenosťami. Milujem, keď slová ožívajú a pomáhajú značkám rásť. Obdivujem Curaprox za to, ako mení obyčajné čistenie zubov na zábavný rituál, a rád by som prispel k šíreniu tejto misie.</p>
+                    <p class="mb-6">Vďaka 5-ročnému freelancovaniu som si osvojil disciplínu a efektivitu pri práci na diaľku, čo mi umožňuje prinášať výsledky odkiaľkoľvek.</p>
+                    
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">Kľúčové zručnosti</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded-lg shadow-sm flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>PPC & SEO</div>
+                        <div class="bg-white p-3 rounded-lg shadow-sm flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" /><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd" /></svg>Copywriting</div>
+                        <div class="bg-white p-3 rounded-lg shadow-sm flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a6 6 0 00-6 6v3.586l-1.707 1.707A1 1 0 003 15v1a1 1 0 001 1h12a1 1 0 001-1v-1a1 1 0 00-.293-.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" /></svg>Social Media</div>
+                        <div class="bg-white p-3 rounded-lg shadow-sm flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" /><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" /></svg>Google Analytics</div>
+                        <div class="bg-white p-3 rounded-lg shadow-sm flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" /></svg>AI Nástroje</div>
+                        <div class="bg-white p-3 rounded-lg shadow-sm flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498A1 1 0 0117 14.72V18a2 2 0 01-2 2a16 16 0 01-16-16A2 2 0 013 5z" /></svg>Angličtina B2</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">Vybrané projekty</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-blue-500 font-semibold">Texty a SEO</div>
+                        <h3 class="block mt-1 text-lg leading-tight font-medium text-black">E-shop padar.sk</h3>
+                        <p class="mt-2 text-slate-500">Tvorba obsahu pre outdoorový e-shop (popisy produktov, blog) so zameraním na hodnoty značky a SEO.</p>
+                        <div class="mt-4 bg-blue-50 p-4 rounded-lg">
+                            <p class="font-semibold text-blue-800">Výsledok: +35 % organická návštevnosť</p>
+                        </div>
+                        <details class="mt-4 group">
+                            <summary class="text-sm font-medium text-slate-600 cursor-pointer group-hover:text-blue-600">Ukážka textu</summary>
+                            <p class="text-sm text-slate-500 mt-2 p-3 bg-slate-100 rounded-md italic">„Turistický batoh Trekker 50L: Spoľahlivý parťák na každú cestu. Ľahký, odolný, s vodoodolným povrchom – pripravený na dobrodružstvo!..."</p>
+                        </details>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-blue-500 font-semibold">PPC Kampaň</div>
+                        <h3 class="block mt-1 text-lg leading-tight font-medium text-black">Módna značka</h3>
+                        <p class="mt-2 text-slate-500">Séria PPC reklám pre Meta a Google Ads pre kampaň na letnú kolekciu oblečenia.</p>
+                        <div class="mt-4 bg-blue-50 p-4 rounded-lg">
+                            <p class="font-semibold text-blue-800">Výsledok: +18 % konverzií, -10 % CPC</p>
+                        </div>
+                        <details class="mt-4 group">
+                            <summary class="text-sm font-medium text-slate-600 cursor-pointer group-hover:text-blue-600">Ukážka textu</summary>
+                            <p class="text-sm text-slate-500 mt-2 p-3 bg-slate-100 rounded-md italic">„Objav letný štýl! Nová kolekcia tričiek už v predaji – zľava 20 % len tento týždeň! Klikni a nakupuj!“</p>
+                        </details>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-blue-500 font-semibold">Newsletter</div>
+                        <h3 class="block mt-1 text-lg leading-tight font-medium text-black">Technologická značka</h3>
+                        <p class="mt-2 text-slate-500">Tvorba newslettrov v Mailchimpe na predstavenie nových produktov a budovanie lojality.</p>
+                        <div class="mt-4 bg-blue-50 p-4 rounded-lg">
+                            <p class="font-semibold text-blue-800">Výsledok: Open rate 28 %, CTR 5 %</p>
+                        </div>
+                        <details class="mt-4 group">
+                            <summary class="text-sm font-medium text-slate-600 cursor-pointer group-hover:text-blue-600">Ukážka textu</summary>
+                            <p class="text-sm text-slate-500 mt-2 p-3 bg-slate-100 rounded-md italic"><strong>Predmet:</strong> Spoznaj budúcnosť: Nový smart gadget je tu!...</p>
+                        </details>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-blue-500 font-semibold">Natívny článok</div>
+                        <h3 class="block mt-1 text-lg leading-tight font-medium text-black">Lifestylový web mylife.sk</h3>
+                        <p class="mt-2 text-slate-500">Článok „5 tipov, ako začať zdravší životný štýl“ s nenápadnou propagáciou produktov klienta.</p>
+                        <div class="mt-4 bg-blue-50 p-4 rounded-lg">
+                            <p class="font-semibold text-blue-800">Výsledok: 10 000 zobrazení, +15 % traffic</p>
+                        </div>
+                        <details class="mt-4 group">
+                            <summary class="text-sm font-medium text-slate-600 cursor-pointer group-hover:text-blue-600">Ukážka textu</summary>
+                            <p class="text-sm text-slate-500 mt-2 p-3 bg-slate-100 rounded-md italic">„Vedeli ste, že zdravý životný štýl začína malými krokmi? Tip č. 1: Investujte do kvalitných pomôcok..."</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="py-16 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">Výsledky a pridaná hodnota</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                    <h3 class="text-xl font-bold mb-2">SEO Optimalizácia</h3>
+                    <p class="text-slate-600">Zvýšenie organickej návštevnosti o 30–35 %.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" /></svg>
+                    <h3 class="text-xl font-bold mb-2">Efektívne PPC</h3>
+                    <p class="text-slate-600">Zvýšenie konverzií o 18–20 % pri znížení nákladov.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.364 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.98 9.11c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                    <h3 class="text-xl font-bold mb-2">AI Inovácie</h3>
+                    <p class="text-slate-600">Rýchlejšia a kreatívnejšia tvorba obsahu a vizuálov.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Curaprox Section -->
+        <section id="curaprox" class="py-16 scroll-mt-20 bg-white rounded-2xl">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Prečo práve Curaprox?</h2>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Curaprox ma fascinuje tým, ako mení obyčajné čistenie zubov na zážitok plný farieb a radosti. Ako copywriter by som rád priniesol texty, ktoré podporia túto misiu – od pútavých popisov kefiek po osvetové články, ktoré inšpirujú k zdravšiemu úsmevu. Moje skúsenosti s tvorbou obsahu a využitie AI mi umožnia vytvárať obsah, ktorý je kreatívny, efektívny a rezonuje s vašou jedinečnou značkou.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 scroll-mt-20">
+            <div class="max-w-xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-slate-900 mb-8">Poďme sa spojiť</h2>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <div class="flex items-center text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        <a href="mailto:igor.slysko1@gmail.com" class="hover:text-blue-600">igor.slysko1@gmail.com</a>
+                    </div>
+                     <div class="flex items-center text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498A1 1 0 0117 14.72V18a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" /></svg>
+                        <span>+421 907 627 938</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>&copy; 2025 Igor Slyško. Všetky práva vyhradené.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
